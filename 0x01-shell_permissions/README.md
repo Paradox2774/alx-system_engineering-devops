@@ -10,3 +10,5 @@ Task 4.Empty : A script that creates an empty file called "hello"
 
 Task 5.Execute : A script that adds execute permission to the owner of the file "hello"
 
+Task 6.Multiple permission : A script that adds execute permission to the owner and the group owner, and read permission to other users, to the file "hello"
+
