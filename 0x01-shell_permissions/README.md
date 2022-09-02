@@ -16,3 +16,6 @@ Task 7.Everybody ; A script that adds execution permission to the owner, the gro
 
 Task 8.James Bond : A script that sets the permission to the file hello as follows:
 
+Task 9. John Doe : A script that sets the mode of the file hello to this
+
+
