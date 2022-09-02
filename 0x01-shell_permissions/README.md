@@ -24,3 +24,5 @@ Task 11.Directories : A script that adds execute permission to all subdirectorie
 
 Task 12. More directories : A script that creates a directory called my_dir with permissions 751 in the working directory.
 
+Task 13.A script that changes the group owner to school for the file hello
+
