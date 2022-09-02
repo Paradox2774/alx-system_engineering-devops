@@ -26,3 +26,4 @@ Task 12. More directories : A script that creates a directory called my_dir with
 
 Task 13.A script that changes the group owner to school for the file hello
 
+Tak 14. Owner and group : A  script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory.
