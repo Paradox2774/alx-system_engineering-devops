@@ -20,4 +20,5 @@ Task 9. John Doe : A script that sets the mode of the file hello to this
 
 Task 10.Look in the mirror : A script that sets the mode of the file hello the same as olleh’s mode
 
+Task 11.Directories : A script that adds execute permission to all subdirectories of the current directory for the owner, the group owner and all other users. Regular files should not be changed.
 
