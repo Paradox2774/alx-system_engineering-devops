@@ -14,3 +14,5 @@ Task 6.Multiple permission : A script that adds execute permission to the owner 
 
 Task 7.Everybody ; A script that adds execution permission to the owner, the group owner and the other users, to the file "hello"
 
+Task 8.James Bond : A script that sets the permission to the file hello as follows:
+
