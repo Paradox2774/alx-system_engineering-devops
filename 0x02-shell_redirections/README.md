@@ -24,3 +24,5 @@ Task 10. A script that counts the number of directories and sub-directories in t
 
 Task 11. A script that takes a list of words as input and prints only words that appear exactly once.
 
+Task 12. A script that displays the 10 newest files in the current directory.
+
