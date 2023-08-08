@@ -4,10 +4,8 @@ Using reddit's API
 """
 import requests
 
-def recurse(subreddit, hot_list=None, after=None):
-    if hot_list is None:
-        hot_list = []
-    
+def recurse(subreddit, hot_list=[], after=None):
+    """Return a list of hot post titles recursively from a subreddit."""
     headers = {'User-Agent': 'api_advanced-project'}
     url = f"https://www.reddit.com/r/{subreddit}/hot.json"
     params = {'limit': 100, 'after': after}
@@ -33,3 +31,12 @@ def recurse(subreddit, hot_list=None, after=None):
         return None
     else:
         raise Exception(f"Request failed with status code: {result.status_code}")
+
+# Example usage:
+subreddit_name = "programming"
+result = recurse(subreddit_name)
+
+if result is not None:
+    print(len(result))
+else:
+    print("None")
