@@ -1,3 +1,4 @@
+
 #!/usr/bin/python3
 """
 Using reddit's API
@@ -23,7 +24,7 @@ def recurse(subreddit, hot_list=None, after=None):
             return None
 
         for article in articles:
-            title = article.get('data', {}).get('title', '')
+            title = article.get('data',b {}).get('title', '')
             hot_list.append(title)
 
         after = data.get('data', {}).get('after', None)
@@ -32,14 +33,3 @@ def recurse(subreddit, hot_list=None, after=None):
             return recurse(subreddit, hot_list, after)
         else:
             return hot_list
-    elif response.status_code == 404:
-        return None
-    else:
-        raise Exception(f'Request failed with status code: {response.status_code}')
-
-# Example usage:
-result = recurse('programming')
-if result is not None:
-    print(len(result))
-else:
-    print("None")
