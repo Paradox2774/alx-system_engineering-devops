@@ -20,8 +20,9 @@ def count_words(subreddit, word_list, after=None, count=None):
             for child in children:
                 title_words = child.get("data").get("title").lower().split()
                 for word in word_list:
-                    if word.lower() in title_words:
-                        count[word] += title_words.count(word.lower())
+                    for title_word in title_words:
+                        if title_word.startswith(word.lower()) and title_word[len(word):].isalpha() == False:
+                            count[word] += 1
             
             after = data.get("after")
             if after:
@@ -37,3 +38,4 @@ def count_words(subreddit, word_list, after=None, count=None):
         return
     else:
         raise Exception(f"Request failed with status code: {response.status_code}")
+
